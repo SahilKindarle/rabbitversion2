@@ -4,12 +4,19 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <link rel="shortcut icon" type="image/png" href="images/shortcut.png" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js"></script>
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/aos.js"></script>
     <title>RupeeRabbit</title>
     <style>
         * {
@@ -34,8 +41,7 @@
         .circle-text {
             display: table-cell;
             height: 400px;
-            /*change this and the width
-for the size of your initial circle*/
+            /*change this and the width for the size of your initial circle*/
 
             text-align: center;
             vertical-align: middle;
@@ -47,36 +53,75 @@ for the size of your initial circle*/
             color: #fff;
             font: 18px "josefin sans", arial;
 
-            /*change this
-for font-size and font-family*/
+            /*change this for font-size and font-family*/
         }
+
+    #triangle-topleft {
+      width: 0;
+      height: 0;
+      border-bottom: 150px solid white;
+      border-right: 50vw solid transparent;
+      display: inline-block;
+      margin-left:-3px;
+      margin-right: -1px;
+      padding: 0px;
+
+    }
+
+
+
+    #triangle-topright {
+      width: 0;
+      height: 0;
+      border-bottom: 150px solid white;
+      border-left: 50vw solid transparent;
+      display: inline-block;
+      margin-right:-50px;
+      margin-left:-1px;
+      padding: 0px;
+    }
+
+.corners {
+    width: 100%;
+    padding: 0%;
+    overflow: hidden;
+    height: 150px;
+}
+
+
+
 
     </style>
 </head>
 
 <body>
     <header>
+
         <div class="navbar-fixed">
             <nav class="white">
                 <div class="nav-wrapper">
                     <div class="container">
-                        <a class="grey-text text-darken-4 sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile" onclick="sidenavinstance.open()"><i class="material-icons">menu</i></a>
-                        <a class="brand-logo" href="index.html"><img src="logo-rupeerabbit.svg" width="50" /></a>
+                        <a class="grey-text text-darken-4 sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile"
+                            onclick="sidenavinstance.open()"><i class="material-icons">menu</i></a>
+                        <a class="brand-logo" href="index.html"><img src="images/logo-rupeerabbit.svg" width="45"/></a>
                         <ul class="right hide-on-med-and-down" id="nav-mobile">
-                            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">LOGIN</a></li>
+                            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                                    href="login.html">LOGIN</a></li>
                             <li><a class="waves-effect waves-light btn white black-text hoverable" style="border: 1px solid blue ">REGISTER</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
+
         <ul class="sidenav" id="nav-mobile">
             <li><a href="index.html">Home</a></li>
             <li><a href="mutualfunds.html">Mutual Funds</a></li>
             <li><a href="finance.html">Personal Finance</a></li>
             <li><a href="loans.html">Loans</a></li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">LOGIN</a></li>
+            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                    href="login.html">LOGIN</a></li>
             <li><a class="waves-effect waves-light btn white black-text hoverable" style="border: 1px solid blue ">REGISTER</a></li>
         </ul>
     </header>
@@ -84,154 +129,239 @@ for font-size and font-family*/
 
 
 
-    <div style="padding-bottom: 100px">
-        <div class="row">
-            <div class="container">
-                <div class="col s12 m6">
-                    <img src="logo-rupeerabbit.svg" alt="" style="width: 200px">
-                    <h3 class="strong truncate" style="font-weight: 900;font-size: 65px;">RupeeRabbit</h3>
-                    <p>For People who demand better. <br><br> </p>
-                    <a class="waves-effect waves-light btn" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">REGISTER NOW</a>
-                </div>
-            </div>
-            <div class="col l6" style="padding-top: 30px">
-                <img src="rupee_logo_1.jpg" alt="" class="right" style="max-width: 80%">
-            </div>
+    <div class="parallax-container" style="min-height:95vh">
+
+        <div class="parallax">
+            <img src="images/GRAPH.png" alt="" class="right">
+        </div>
+
+
+
+        <div class="container">
+
+            <img src="images/logo-rupeerabbit.svg" alt="" style="width: 120px">
+            <h2 class="strong truncate" style="font-weight: 900;">RupeeRabbit</h2>
+            <h5 style='min-height:100px;'>is <span id="example1" style="color: blue"></span> Advisor</h5>
+
+            <!-- <p>For People who demand better. <br><br> </p> -->
+            <a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">GET
+                STARTED</a>
 
         </div>
+
+
+
+
+
+
     </div>
 
+    <div style=" background:linear-gradient(135deg,#8f53d7,#1e83ef);">
+        <div class="valign-wrapper" style="min-height: 80vh;">
+            <div class="container center" style="padding-top: 50px">
+                <!-- <a href="risk.html" class="white-text">
 
-    <div class="row" style="background:linear-gradient(135deg,#8f53d7,#1e83ef);">
-        <div>
-            <div class="col m4">
+                    <div class="circle valign-wrapper z-depth-4 white-text" style="background: #00d09c; margin-left: auto; margin-right: auto; width: 70vmin; height:70vmin; padding: 50px;">
+                        <h5 style="width: 100%; " class="center white-text flow-text">Take
+                            risk assessment survey and win coupons worth <br><span class="robo" style="font-size: 2.5em; line-height: 80px; font-weight: 600">2000
+                                INR<br></span>
+                            <!-- 
+                            <br>
+                                    <a class="waves-effect waves-light btn white black-text hoverable" style="height:auto;border-radius:45px;" href="risk.html">Take the Risk <br>Assessment Survey</a> --
+                        </h5>
+                    </div>
 
-            </div>
-            <div class="col s12 m4 center">
-                <a href="#">
-                    <img src="2000.png" alt="" style="max-width: 80%">
+                    <!-- <img src="2000.png" alt="" style="max-width: 80%">  --
+                </a> -->
+
+
+                <a href="https://play.google.com/store/apps/details?id=com.acetech.rupeerabbit&rdid=com.acetech.rupeerabbit" class="white-text">
+
+                    <div class="circle valign-wrapper z-depth-4 white-text" style="background: #00d09c; margin-left: auto; margin-right: auto; width: 70vmin; height:70vmin; padding: 50px;">
+                        <h5 style="width: 100%; " class="center white-text flow-text">Download the app on Google Play now!<br><br>
+                            <i class="large material-icons">shop</i></h5>
+                    </div>
+
+                  
                 </a>
             </div>
-            <div class="col m4">
 
-            </div>
+
+
+
+        </div>
+        <div class="corners">
+            <div id="triangle-topleft"></div>
+            <div id="triangle-topright"></div>
         </div>
     </div>
 
-    <div class="row" style="padding-top: 120px;">
+    <section style="padding-top: 100px;">
+
         <div class="container">
-            <div class="col s12 m6 l4">
-                <div class="card horizontal hoverable z-depth-3">
-                    <div class="card-stacked container">
-                        <div class="card-title center">
-                            <br>
-                            <h4 style="font-weight: 900;" class="truncate">Mutual Funds</h4>
-                        </div>
-                        <div class="card-content">
-                            <p class="center">Investment Made Easy. <br><br><br></p>
-                            <img src="gui-2311261_1280.png" alt="" width="250px">
-                        </div>
-                        <div class="card-action">
-                            <div class="center">
-                                <a class="waves-effect waves-light btn" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);" href="mutualfunds.html">START NOW</a>
+            <div class="row">
+
+                <div class="col s12 m4">
+                    <div class="card medium horizontal hoverable z-depth-3">
+                        <div class="card-stacked container">
+                            <div class="card-title center">
+                                <br>
+                                <h4 style="font-weight: 900;">Mutual Funds</h4>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="card horizontal hoverable z-depth-3">
-                    <div class="card-stacked container">
-                        <div class="card-title center">
-                            <br>
-                            <h4 style="font-weight: 900;">Sole Finance</h4>
-                        </div>
-                        <div class="card-content">
-                            <p class="center">Spend Management Done!! <br><br></p>
-                            <img src="accounting-3076855_1920.png" alt="" class="center" style="margin-left: 40%">
-                        </div>
-                        <div class="card-action">
-                            <div class="center">
-                                <a class="waves-effect waves-light btn" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);" href="finance.html">START NOW</a>
+                            <div class="card-content">
+                                <p class="center">Investment Made Easy. <br><br><br></p>
+                                <img src="images/gui-2311261_1280.png" alt="" width="250px">
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m6 l4">
-                <div class="card horizontal hoverable z-depth-3">
-                    <div class="card-stacked container">
-                        <div class="card-title center">
-                            <br>
-                            <h4 style="font-weight: 900;">Loans</h4>
-                        </div>
-                        <div class="card-content">
-                            <p class="center">Investment Made Easy. <br></p>
-                            <form class="col s12">
-                                <div class="row">
-                                    <p class="range-field">
-                                        <input type="range" id="test" min="0" max="100" style="color: linear-gradient(135deg,#8f53d7,#1e83ef);" />
-                                    </p>
+                            <div class="card-action">
+                                <div class="center">
+                                    <a class="waves-effect waves-light btn" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                                        href="mutualfunds.html">START NOW</a>
                                 </div>
-                            </form>
-                            <p>Dynamic Borrowing</p>
+                            </div>
                         </div>
-                        <div class="card-action">
-                            <div class="center">
-                                <a class="waves-effect waves-light btn" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);" href="loans.html">START NOW</a>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card medium horizontal hoverable z-depth-3">
+                        <div class="card-stacked container">
+                            <div class="card-title center">
+                                <br>
+                                <h4 style="font-weight: 900;">Personal Finance</h4>
+                            </div>
+                            <div class="card-content">
+                                <p class="center">Spend Management Done!!<br><br></p>
+                                <img src="images/accounting-3076855_1920.png" alt="" class="center" style="margin-left: 40%">
+                            </div>
+                            <div class="card-action">
+                                <div class="center">
+                                    <a class="waves-effect waves-light btn" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                                        href="finance.html">START NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card medium horizontal hoverable z-depth-3">
+                        <div class="card-stacked container">
+                            <div class="card-title center">
+                                <br>
+                                <h4 style="font-weight: 900;">Loans</h4>
+                            </div>
+                            <div class="card-content">
+                                <p class="center">Borrow at Ease.<br></p>
+                                <form class="col s12">
+                                    <div class="row">
+                                        <p class="range-field">
+                                            <input type="range" id="test" min="0" max="100" style="color: linear-gradient(135deg,#8f53d7,#1e83ef);" />
+                                        </p>
+                                    </div>
+                                </form>
+                                <p>Dynamic Borrowing</p>
+                            </div>
+                            <div class="card-action">
+                                <div class="center">
+                                    <a class="waves-effect waves-light btn" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                                        href="loans.html">START NOW</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
 
 
     <footer class="page-footer" style="background-color: #00d09c">
-        <div class="container">
+        <div>
             <div class="row">
-                <div class="col l6 s12">
-                    <img src="logo-rupeerabbit.svg" alt="" width="100">
-                    <h5 class="white-text">RupeeRabbit</h5>
-                    <p class="grey-text text-lighten-4">For people who demand better.</p>
+
+
+                <div class="col l9 s12">
+
                     <div class="row">
-                        <div class="col s4 ">
-                            <u><a href="mutualfunds.html" class="white-text">Mutual Funds</a></u>
+                        <div class="col s12">
+                            <img src="images/logo-rupeerabbit white.svg" alt="" width="100">
+                            <h5 class="white-text" style="margin-left:20px">RupeeRabbit</h5>
                         </div>
-                        <div class="col s4 ">
-                            <u><a href="finance.html" class="white-text">Personal Finance</a></u>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <h5 class="white-text" style="margin-left:20px">Corporate Office:-</h5>
+                            <p class="grey-text text-lighten-4" style="margin-left:20px">  E-704, <br> langston Apartment, <br> Kharadi, <br> Pune 411014</p>
+                            
+
                         </div>
-                        <div class="col s4 ">
-                            <u><a href="loans.html" class="white-text">Loans</a></u>
+
+                        <div class="col s12 l4">
+                            <h5 class="white-text" style="margin-left:20px">Principle Office:-</h5>
+                            <p class="grey-text text-lighten-4" style="margin-left:20px">4th floor B.B Tower,<br> next to Sai vatika Lawn <br>near Equitas Small Finance Bank <br>Shankar Nagar - Nagpur</p>
                         </div>
-                        <div class="col s4 ">
-                            <u><a href="aboutus.html" class="white-text">About Us</a></u>
+
+
+                        <div class="col s12 l2">
+
+                            <ul style="margin-right:50px">
+                                <li><a href="mutualfunds.html" class="white-text">Mutual Funds</a></li>
+
+
+                                <li><a href="finance.html" class="white-text">Personal Finance</a></li>
+
+
+                                <li><a href="loans.html" class="white-text">Loans</a></li>
+
+
+                                <li><a href="aboutus.html" class="white-text">About Us</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="col s12 l2">
+                            <ul>
+                                <li><a class="white-text" href="#">Terms & Conditions</a></li>
+                                <li><a class="white-text" href="#">FAQ</a></li>
+                                <li><a class="white-text" href="#">Privacy Policy</a></li>
+                            </ul>
+
+
+
                         </div>
                     </div>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <img src="banner.b13358b8.png" alt="">
+
+
+                <div class="col l3 s12">
+                    <img src="images/banner.b13358b8.png" alt="">
                 </div>
+
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <a href="http://root-kings.github.io" target="_blank" class="black-text">  © Root-Kings </a>
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+
+
+            <div class="footer-copyright">
+
+                <a href="http://rupeerabbit.com" target="_blank" class="white-text" style="padding-left: 20px; padding-right:20px;">&copy;
+                    RupeeRabbit 2018 - ARN 89033</a>
+                <a href="http://root-kings.github.io" target="_blank" class="white-text" style="padding-left: 20px; padding-right:20px;">Designed
+                    by Root-Kings </a>
+
             </div>
-        </div>
+
+
     </footer>
+
 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         M.AutoInit();
-
+        AOS.init();
     </script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

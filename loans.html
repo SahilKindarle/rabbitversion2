@@ -3,18 +3,26 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mutual Funds | RupeeRabbit </title>
+    <link rel="shortcut icon" type="image/png" href="images/shortcut.png" />
+    <title>Loans | RupeeRabbit </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/loans.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
 </head>
 <style>
     * {
         font-family: 'Montserrat', sans-serif;
     }
+    .abril {
 
+font-family: 'Abril Fatface', cursive;
+}
+    
 </style>
 
 <body>
@@ -23,10 +31,12 @@
             <nav class="white">
                 <div class="nav-wrapper">
                     <div class="container">
-                        <a class="grey-text text-darken-4 sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile" onclick="sidenavinstance.open()"><i class="material-icons">menu</i></a>
-                        <a class="brand-logo" href="index.html"><img src="logo-rupeerabbit.svg" width="50" /></a>
+                        <a class="grey-text text-darken-4 sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile"
+                            onclick="sidenavinstance.open()"><i class="material-icons">menu</i></a>
+                        <a class="brand-logo" href="index.html"><img src="images/logo-rupeerabbit.svg" width="45" /></a>
                         <ul class="right hide-on-med-and-down" id="nav-mobile">
-                            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">LOGIN</a></li>
+                            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                                    href="login.html">LOGIN</a></li>
                             <li><a class="waves-effect waves-light btn white black-text hoverable" style="border: 1px solid blue ">REGISTER</a></li>
                         </ul>
                     </div>
@@ -39,7 +49,8 @@
             <li><a href="finance.html">Personal Finance</a></li>
             <li><a href="loans.html">Loans</a></li>
             <li><a href="aboutus.html">About Us</a></li>
-            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">LOGIN</a></li>
+            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                    href="login.html">LOGIN</a></li>
             <li><a class="waves-effect waves-light btn white black-text hoverable" style="border: 1px solid blue ">REGISTER</a></li>
         </ul>
     </header>
@@ -47,20 +58,21 @@
 
 
 
-    <div class="row">
+    <div class="row" style="height:65vh">
         <div style="margin-top: 160px;">
             <div class="col s12 m4">
                 <div class="container">
-                    <i class="fas fa-credit-card" style="color: #00d09c;font-size: 40px"></i>
+                    <i class="fas fa-money-check-alt" style="color: #00d09c;font-size: 40px"></i>
                     <h5 class="strong" style="font-weight: 400;font-size: 40px;">
                         Loans and Credit Cards</h5>
-                    <p>Salary in advace Introduced!! <br><br>
+                    <p>Borrow at Ease!! <br><br>
                     </p>
-                    <a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">START INVESTING</a>
+                    <a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);">Apply
+                        for Loan</a>
                 </div>
             </div>
             <div class="col s12 m8 center">
-                <img src="loans.png" alt="" width="600" style="margin-top: 40px; max-width: 80%">
+                <img src="images/loans.png" alt="" width="600" style="margin-top: 40px; max-width: 80%">
             </div>
         </div>
     </div>
@@ -88,29 +100,36 @@
 -->
 
     <footer class="page-footer" style="background-color: #625eeb;padding-bottom: 20px">
-        <h2 style="font-weight: 900" class="center">HOW WE HELP?</h2>
+        <h2 style="font-weight: 900" class="center">Get Hassle Free Loans In Minutes</h2>
 
         <div class="row">
-            <div class="col l4 s12">
-                <p style="font-size: 20px">We Help you get</p>
-                <h3>Salary Advance<br></h3>
-                <p class="left" style="font-weight: 700;font-size: 20px">Download and Apply
-                    <br>Instant Approval
-                    <br>Cash Transfer</p>
+            <div class="col l6 push-l2 s12">
+
+
+
+
+                <h5>1. Download our App </h5>
+                <p>Download RupeeRabbit app on your mobile and tell us how much cash you need, for how much time and
+                    upload your documents. </p>
+                <h5><br>2. Instant Approval </h5>
+                <p>We'll instantly do the math and tell you how much cash we can lend you after looking at your
+                    particulars and the Social Worth Score.</p>
+                <h5><br>3. Cash Transfer </h5>
+                <p>Avail cash transfer directly to your bank account or shop with our partners and pay later in low
+                    cost EMIs.</p>
+
+
+
+
 
             </div>
-            <div class="col l4 s12">
-                <p style="font-size: 20px">We Provide</p>
-                <h3>Pay at Your Convenience</h3>
-                <p class="left" style="font-weight: 700;font-size: 20px">EMI on the Go <br>
-                    No more waiting for the price drop. </p>
-            </div>
-            <div class="col l4 s12">
+           
+            <div class="col l4 push-l2 s12">
                 <img src="https://groww.in/build/client/images/expert_community_2x.04d9166d.svg" alt="">
             </div>
         </div>
 
-        <div>
+        <!-- <div>
             <div class="row">
                 <div class="col l4 s12">
                     <img src="dynamic.png" alt="" width="400px" style="margin-top: 40px;max-width: 90%">
@@ -131,15 +150,117 @@
                     <p class="left" style="font-weight: 700;font-size: 20px">EMI on the go facility to helpyou own your dreams. A separate limit for all sectors . </p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </footer>
 
 
 
 
-    <div class="white">
+
+    <div class="row" style="padding:40px" id="emicalciloans">
+        <h3 class="center strong">Get Your EMI Calculated!!</h3>
+        <br>
+        <h5 class="center light">I've got Loan Amount of<input type="text" id="Amount" required="required" style="width:200px"
+                class="center" />
+            in the Time Period of<input type="text" id="Time" required="required" style="width:200px" class="center" />
+            Months
+            <br>
+            at an Interest Rate(Annual) of
+            <input type="text" id="InterestRate" required="required" style="width:200px" class="center" />
+            <br><br>
+            <div id="result" class="center-align"></div>
+        </h5>
+        <br>
+        <div class="center">
+            <a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);"
+                onclick="calculateemi()">Get it Calculated</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div style="background:#efc051;padding:30px">
+        <h3 class="center strong white-text" style="font-weight: 900;padding: 30px">
+            Features the Rabbit Delivers.</h3>
+
+        <div class="row">
+            <div class="container" style="padding: 0%">
+                <div class="col s12 m6">
+                    <div class="card white z-depth-5 small" style="height:200px">
+                        <div class="card-content black-text">
+                            <span class="card-title center abril truncate" style="padding: 5%;font-size: 50px">Loans</span>
+                            <div class="container">
+                                <p class="center"> Loan amount from Rs 25 thousand - <br> Rs 25 Lakhs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m6">
+                    <div class="card white z-depth-5 small" style="height:200px;">
+                        <div class="card-content black-text">
+                            <span class="card-title center abril truncate" style="padding: 5%;font-size: 50px">Repayment</span>
+                            <div class="container">
+                                <p class="center">Flexible repayment tenures between 3 months to 3 years.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div style="padding:0px">
+                <div class="col s12 m4 l4">
+                    <div class="card white z-depth-5 small" style="height:200px">
+                        <div class="card-content black-text">
+                            <span class="card-title center abril truncate" style="padding: 5%;font-size: 50px">Borrowing</span>
+                            <div class="container">
+                                <p class="center"> Low Borrowing fees - As low as 2 Cups of coffee.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card white z-depth-5 small" style="height:200px">
+                        <div class="card-content black-text">
+                            <span class="card-title center abril truncate" style="padding: 5%;font-size: 50px">Flexibility</span>
+                            <div class="container">
+                                <p class="center">Be it your desire to shop or to take care of a medical expense, you
+                                    get a separate limit for it all.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 l4">
+                    <div class="card white z-depth-5 small" style="height:200px">
+                        <div class="card-content black-text">
+                            <span class="card-title center abril truncate" style="padding: 5%;font-size: 50px">Requirement</span>
+                            <div class="container">
+                                <p class="center"> Borrow more if you need more - top up facility available for
+                                    existing users.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <div style="background: #F7F7F7;">
         <div class="row center">
-            <img src="logo-rupeerabbit.svg" alt="" width="150">
+            <img src="images/logo-rupeerabbit.svg" alt="" width="150">
             <h2 style="font-weight: 900" class="center">The Rabbit's Support</h2>
         </div>
         <div class="row">
@@ -152,7 +273,8 @@
                                 <h5 style="font-weight: 900;color: #00b2f6">Who is eligible to use RupeeRabbit? </h5>
                             </div>
                             <div class="card-content">
-                                <p class="center">Eligibility Criterion. <br><br>Any Indian resident 18 years or older ( if you’re a ward of the state in Nebraska) is eligible to use RupeeRabbit. <br></p>
+                                <p class="center">Eligibility Criterion. <br><br>Any Indian resident 18 years or older
+                                    is eligible to use RupeeRabbit. <br></p>
                             </div>
                         </div>
                     </div>
@@ -166,7 +288,8 @@
                                 </h5>
                             </div>
                             <div class="card-content">
-                                <p class="center">Creating profile!. <br><br> our RupeeRabbit account is created using your name, email. This combination helps, verify your identity.
+                                <p class="center">Creating profile!. <br><br> Our RupeeRabbit account is created using
+                                    your name, email. This combination helps, verify your identity.
                                     <br></p>
                             </div>
                         </div>
@@ -180,7 +303,8 @@
                                 <h5 style="font-weight: 900;color: #00b2f6">Who is always there to Help You?</h5>
                             </div>
                             <div class="card-content">
-                                <p class="center">RupeeRabbit's Agent. <br><br>And we'll keep working. Once we get you set up we'll manage your portfolio with our tax-smart technology. <br></p>
+                                <p class="center">RupeeRabbit's Agent. <br><br>And we'll keep working. Once we get you
+                                    set up we'll manage your portfolio with our tax-smart technology. <br></p>
                             </div>
                         </div>
                     </div>
@@ -189,48 +313,119 @@
         </div>
     </div>
 
+
+
+
     <footer class="page-footer" style="background-color: #00d09c">
-        <div class="container">
+        <div>
             <div class="row">
-                <div class="col l6 s12">
-                    <img src="logo-rupeerabbit.svg" alt="" width="100">
-                    <h5 class="white-text">RupeeRabbit</h5>
-                    <p class="grey-text text-lighten-4">For people who demand better.</p>
+
+
+                <div class="col l9 s12">
+
                     <div class="row">
-                        <div class="col s4 ">
-                            <u><a href="mutualfunds.html" class="white-text">Mutual Funds</a></u>
+                        <div class="col s12">
+                            <img src="images/logo-rupeerabbit white.svg" alt="" width="100">
+                            <h5 class="white-text" style="margin-left:20px">RupeeRabbit</h5>
                         </div>
-                        <div class="col s4 ">
-                            <u><a href="finance.html" class="white-text">Personal Finance</a></u>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <h5 class="white-text" style="margin-left:20px">Corporate Office:-</h5>
+                            <p class="grey-text text-lighten-4" style="margin-left:20px">  E-704, <br> langston Apartment, <br> Kharadi, <br> Pune 411014</p>
+                            
+
                         </div>
-                        <div class="col s4 ">
-                            <u><a href="loans.html" class="white-text">Loans</a></u>
+
+                        <div class="col s12 l4">
+                            <h5 class="white-text" style="margin-left:20px">Principle Office:-</h5>
+                            <p class="grey-text text-lighten-4" style="margin-left:20px">4th floor B.B Tower,<br> next to Sai vatika Lawn <br>near Equitas Small Finance Bank <br>Shankar Nagar - Nagpur</p>
                         </div>
-                        <div class="col s4 ">
-                            <u><a href="aboutus.html" class="white-text">About Us</a></u>
+
+
+                        <div class="col s12 l2">
+
+                            <ul style="margin-right:50px">
+                                <li><a href="mutualfunds.html" class="white-text">Mutual Funds</a></li>
+
+
+                                <li><a href="finance.html" class="white-text">Personal Finance</a></li>
+
+
+                                <li><a href="loans.html" class="white-text">Loans</a></li>
+
+
+                                <li><a href="aboutus.html" class="white-text">About Us</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="col s12 l2">
+                            <ul>
+                                <li><a class="white-text" href="#">Terms & Conditions</a></li>
+                                <li><a class="white-text" href="#">FAQ</a></li>
+                                <li><a class="white-text" href="#">Privacy Policy</a></li>
+                            </ul>
+
+
+
                         </div>
                     </div>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <img src="banner.b13358b8.png" alt="">
+
+
+                <div class="col l3 s12">
+                    <img src="images/banner.b13358b8.png" alt="">
                 </div>
+
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <a href="http://root-kings.github.io" target="_blank" class="black-text">  © Root-Kings </a>
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+
+
+            <div class="footer-copyright">
+
+                <a href="http://rupeerabbit.com" target="_blank" class="white-text" style="padding-left: 20px; padding-right:20px;">&copy;
+                    RupeeRabbit 2018 - ARN 89033</a>
+                <a href="http://root-kings.github.io" target="_blank" class="white-text" style="padding-left: 20px; padding-right:20px;">Designed
+                    by Root-Kings </a>
+
             </div>
-        </div>
+
+
     </footer>
 
-     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
         M.AutoInit();
-
     </script>
-    <script src="index.js"></script>
+    <script>
+        function calculateemi() {
+            console.log('one');
+            var Amount = $("#Amount").val();
+            console.log('one');
+            var time = $("#Time").val();
+            console.log('one');
+            var interest = $("#InterestRate").val()
+            console.log('one');
+            var r = interest / 12 / 100;
+            console.log('one');
+            var a = Math.pow((1 + r), time);
+            console.log('one');
+            var b = (Math.pow((1 + r), time) - 1);
+            console.log('one');
 
+            var finalvalue = Amount * r * a / b;
+            console.log('fv : ' + finalvalue);
+            var roundedvalue = Math.round(finalvalue);
+            console.log('rv : ' + roundedvalue);
+            $("#result").empty();
+            $("#result").append("Your EMI = Rs. " + roundedvalue);
+        }
+    </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

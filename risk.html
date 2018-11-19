@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="images/shortcut.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Risk Assessment | RupeeRabbit</title>
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+        }
+        #lol
+        {
+            color: black;
+        }
+        .robo {
+            font-family: 'Roboto', sans-serif;
+        }
+        .input
+        {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .select-wrapper input.select-dropdown
+        {
+            color: white;
+        }
+        .input-field > label
+        {
+            color: white;
+        }
+        .input-field > label:active
+        {
+            color: white;
+        }
+
+        .circle-text {
+            display: table-cell;
+            height: 200px;
+            /*change this and the width for the size of your initial circle*/
+
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 25%;
+            padding: 30px;
+            margin-top: 40px;
+            /*make it pretty*/
+            background: #83e4c8;
+            color: #fff;
+            font: 18px "josefin sans", arial;
+
+            /*change this for font-size and font-family*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="white">
+                <div class="nav-wrapper">
+                    <div class="container">
+                        <a class="grey-text text-darken-4 sidenav-trigger hide-on-large-only" href="#" data-target="nav-mobile"
+                            onclick="sidenavinstance.open()"><i class="material-icons">menu</i></a>
+                        <a class="brand-logo" href="index.html"><img src="images/logo-rupeerabbit.svg" width="45" /></a>
+                        <ul class="right hide-on-med-and-down" id="nav-mobile">
+                            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);" href="login.html">LOGIN</a></li>
+                            <li><a class="waves-effect waves-light btn white black-text hoverable" style="border: 1px solid blue ">REGISTER</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="nav-mobile">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mutualfunds.html">Mutual Funds</a></li>
+            <li><a href="finance.html">Personal Finance</a></li>
+            <li><a href="loans.html">Loans</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a class="waves-effect waves-light btn hoverable" style="background: linear-gradient(135deg,#8f53d7,#1e83ef);" href="login.html">LOGIN</a></li>
+            <li><a class="waves-effect waves-light btn white black-text hoverable" style="border: 1px solid blue ">REGISTER</a></li>
+        </ul>
+    </header>
+
+    <div class="valign-wrapper" style="min-height: 77vh;">
+        <div class="container center" style="padding-top: 50px">
+            <a href="#" class="white-text">
+
+                <div class="circle valign-wrapper z-depth-4 white-text" style="background: #00d09c; margin-left: auto; margin-right: auto; width: 50vmin; height:50vmin; padding: 50px;">
+                    <h5 style="width: 100%; " class="center white-text">Take
+                        risk assessment survey and win coupons worth <br><span class="robo" style="font-size: 2.5em; line-height: 80px; font-weight: 600">2000
+                            INR<br></span>
+                    </h5>
+                </div>
+
+                <!-- <img src="2000.png" alt="" style="max-width: 80%">  -->
+            </a>
+        </div>
+    </div>
+
+    <section class="white-text" style="background: #625eeb;padding: 40px">
+        <div class="row" style="padding:40px">
+            <h3 class="center strong">Take Your Risk Assessment Survey!</h3>
+
+        </div>
+
+        <form action="https://sahilkindarle.000webhostapp.com/add.php" method="POST">
+            <div class="row">
+                <div>
+                    <div class="col s12 l3">
+                        <h5 class="center light">
+                            My Annual income is
+                        </h5>
+                    </div>
+                    <div class="container">
+                        <div class="col s12 l2 center">
+                            <input type="text" id="Amount" required="required" style="width:200px" class="center input"
+                                name="annualincome" />
+                        </div>
+                        <div class="col s12 l5">
+                            <h5 class="center light">
+                                My Income is of
+                            </h5>
+                        </div>
+                        <div class="col s12 l2" style="color: white;">
+                            <select class="input-field center white-text" name="incometype">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="option1">Option 1</option>
+                                <option value="2" class="white-text">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div class="col s12 l4">
+
+                        <h5 class="center light">
+                            Family Persons Depending on me
+                        </h5>
+                    </div>
+
+                    <div class="col s12 l2">
+                        <select class="input-field center" name="familypersons">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                    <div class="col s12 l4">
+
+                        <h5 class="center light">
+                            Holding Monthly Savings of
+                        </h5>
+                    </div>
+                    <div class="col s12 l2">
+                        <select class="input-field center" style="width: 200px;" name="monthlysavings">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                        </select>
+                    </div>
+                    <br><br><br>
+                    <div class="col s12 l7 center">
+                        <h5 class="center light">
+                            Do you have fund for emergency
+                        </h5>
+                    </div>
+                    <div class="col s12 l3 center">
+                        <select class="input-field center" style="width: 200px;" name="emergencyfunds">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                            <option value="3">I have Insurance</option>
+                        </select>
+                    </div>
+                    <div class="col s12 l2">
+
+                    </div>
+                    <div class="col s12 l4">
+                        <h5 class="center light">Do You have Investments </h5>
+                    </div>
+                    <div class="col s12 l2">
+                        <select class="country">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="Yes" id="yesfunds">Yes</option>
+                            <option value="No" id="nofunds">No</option>
+                        </select>
+                    </div>
+                    <div class="col s12 l4">
+                        <h5 class="center light">
+                            <div>
+                                <select name="fundspanel" id="fundspanel" class="fundspanel">
+                                    <option value="Yes">lol</option>
+                                    <option value="Yes">lol1</option>
+                                    <option value="Yes">lol2</option>
+                                </select>
+                            </div>
+                        </h5>
+                    </div>
+                    <div class="col s12 l2"></div>
+
+                </div>
+            </div>
+            <div style="padding-top: 50px">
+                <h3 class="center strong">Let's Set Your Goals!</h3>
+                <div class="row">
+                    <div class="col s12 l6">
+                        <h5 class="center light">
+                            Set Your Tenure of Investment planning
+                        </h5>
+                    </div>
+                    <div class="col s12 l4">
+                        <select class="tenure">
+                            <option value="" disabled selected>Choose your option</option>
+                            <option value="Three">Short term - upto 3 years </option>
+                            <option value="seven">Medium term - 3 to 7 years </option>
+                            <option value="fiveplus">Long term - More than 5 years </option>
+                        </select>
+                    </div>
+                    <div class="col s12 l2">
+
+                    </div>
+                    <div class="col s12 l4">
+
+                    </div>
+                    <div class="col s12 l4">
+                        <h5 class="center light">
+                            <div id="termgoals">
+
+                            </div>
+                        </h5>
+                    </div>
+                    <div class="col s12 l4">
+
+                    </div>
+                </div>
+
+
+                <div style="padding-top: 50px">
+                    <h3 class="center strong">About You!! <br><br></h3>
+                    <div class="row container">
+                        <div class="col s12 l2">
+                            <h5 class="center light">
+                                Full Name:
+                            </h5>
+                        </div>
+                        <div class="col s12 l4">
+                            <input id="fullname" type="text" class="validate white-text center" name="fullname">
+                        </div>
+                        <div class="col s12 l2">
+                            <h5 class="center light">
+                                Age:
+                            </h5>
+                        </div>
+                        <div class="col s12 l4">
+                            <input id="age" type="text" class="validate white-text center" name="age">
+                        </div>
+
+                        <div class="col s12 l2">
+                            <h5 class="center light">
+                                Gender:
+                            </h5>
+                        </div>
+                        <div class="col s12 l4">
+                            <select class="gender" name="gender">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female </option>
+                                <option value="Other">Other </option>
+                            </select>
+                        </div>
+                        <div class="col s12 l2">
+                            <h5 class="center light">
+                                Phone:
+                            </h5>
+                        </div>
+                        <div class="col s12 l4">
+                            <input id="phone" type="text" class="validate white-text center" name="phone">
+                        </div>
+
+                        <div class="col s12 l2">
+                            <h5 class="center light">
+                                City:
+                            </h5>
+                        </div>
+                        <div class="col s12 l4">
+                            <input id="city" type="text" class="validate white-text center" name="city">
+                        </div>
+                        <div class="col s12 l2">
+                            <h5 class="center light">
+                                Email:
+                            </h5>
+                        </div>
+                        <div class="col s12 l4">
+                            <input id="email" type="email" class="validate white-text center" name="email">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+
+
+
+
+    <footer class="page-footer" style="background-color: #00d09c">
+        <div>
+            <div class="row">
+
+
+                <div class="col l8 s12">
+
+                    <div class="row">
+                        <div class="col s12">
+                            <img src="images/logo-rupeerabbit white.svg" alt="" width="100">
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <h5 class="white-text" style="margin-left:20px">RupeeRabbit</h5>
+                            <p class="grey-text text-lighten-4" style="margin-left:20px">For people who demand
+                                better.</p>
+
+                        </div>
+
+
+
+                        <div class="col s12 l4">
+
+                            <ul>
+                                <li><a href="mutualfunds.html" class="white-text">Mutual Funds</a></li>
+
+
+                                <li><a href="finance.html" class="white-text">Personal Finance</a></li>
+
+
+                                <li><a href="loans.html" class="white-text">Loans</a></li>
+
+
+                                <li><a href="aboutus.html" class="white-text">About Us</a></li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="col s12 l4">
+                            <ul>
+                                <li><a class="white-text" href="#">Terms & Conditions</a></li>
+                                <li><a class="white-text" href="#">FAQ</a></li>
+                                <li><a class="white-text" href="#">Privacy Policy</a></li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col l4 s12">
+                    <img src="images/banner.b13358b8.png" alt="">
+                </div>
+
+            </div>
+
+
+            <div class="footer-copyright">
+
+                <a href="http://rupeerabbit.com" target="_blank" class="white-text" style="padding-left: 20px; padding-right:20px;">&copy;
+                    RupeeRabbit 2018 - ARN 89033</a>
+                <a href="http://root-kings.github.io" target="_blank" class="white-text" style="padding-left: 20px; padding-right:20px;">Designed
+                    by Root-Kings </a>
+
+            </div>
+
+
+    </footer>
+
+
+
+
+
+    <script>
+        function monthly() {
+            document.getElementById("compoundinterest").value = "Monthly";
+        }
+
+        function quaterly() {
+            document.getElementById("compoundinterest").value = "Quaterly";
+        }
+
+        function halfyearly() {
+            document.getElementById("compoundinterest").value = "Half Yearly";
+        }
+
+        function yearly() {
+            document.getElementById("compoundinterest").value = "Yearly";
+        }
+
+        function business() {
+            document.getElementById("incometype").value = "Business";
+        }
+
+        function salary() {
+            document.getElementById("incometype").value = "Salary";
+        }
+
+        function count(per) {
+            console.log(per);
+            document.getElementById("persondependent").value = " " + per;
+        }
+
+        function tenure(time) {
+            console.log(time);
+            document.getElementById("tenure").value = " " + time;
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*$("select.country").change(function() {
+                var yes = "Yes";
+                var selectedCountry = $(".country option:selected").val();
+                //alert("You have selected the country - " + selectedCountry);
+                var n = selectedCountry.localeCompare(yes);
+                //alert(n);
+                if (n == "0") {
+                    //$("p").html("Hello <b>world!</b>");
+                    //alert("lolxd");
+                    //$("#fundspanel").empty();
+                    $("#fundspanel").append('<option value="option6">option6</option>');
+                    $("#fundspanel").append('<option value="option7">option7</option>');
+                    $("#fundspanel").append('<option value="option8">option8</option>');
+                    $("#fundspanel").append('<option value="option9">option9</option>');
+
+
+                    //$("#fundspanel").append(function() {
+                    //  return $("<select id='comboboxShowLabel'>")
+                    //    .append("<option value=''>Hide or show labels?</option>")
+                    //  .append("<option value='Show Labels'>Show Label</option>")
+                    //.append("<option value='Hide Labels'>Hide Label</option>");
+                    //});
+
+                    console.log("one");
+                    //str = '<select class="input-field center" style="width: 200px;"><option value="" disabled selected>Choose your option</option><option value="1">Yes</option><option value="2">No</option><option value="3">I have Insurance</option></select>';\
+                    //console.log("one");
+                    //html = $.parseHTML( str );
+                    //console.log("one");
+                    //$fundspanel.append( html );
+                    //console.log("one");
+
+                }
+                if (n != "0") {
+                    $("#fundspanel").empty();
+                }
+            });*/
+            $("select.tenure").change(function () {
+                var yes = "Three";
+                var selectedTenure = $(".tenure option:selected").val();
+                var n = selectedTenure.localeCompare(yes);
+                console.log("two");
+                if (n == "0") {
+                    //$("p").html("Hello <b>world!</b>");
+                    //alert("lolxd");
+                    $("#termgoals").empty();
+                    //$("#termgoals").append(function() {
+                    //  return $("<select id='comboboxShowLabel'>")
+                    //    .append("<option value=''>Hide or show labels?</option>")
+                    //  .append("<option value='Show Labels'>Show Label</option>")
+                    //.append("<option value='Hide Labels'>Hide Label</option>");
+                    //});
+                }
+                if (n != "0") {
+                    $("#termgoals").empty();
+                    console.log('not zero');
+                }
+            });
+
+
+        });
+    </script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/risk.js"></script>
+</body>
+
+</html>
